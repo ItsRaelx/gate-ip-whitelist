@@ -34,6 +34,16 @@ func onPing() func(*proxy.PingEvent) {
 	)
 
 	return func(e *proxy.PingEvent) {
+		// Check if connection and ping are valid
+		if e.Connection() == nil {
+			return
+		}
+		
+		ping := e.Ping()
+		if ping == nil {
+			return
+		}
+		
 		clientVersion := version.Protocol(e.Connection().Protocol())
 		line1 := mini.Gradient(
 			fmt.Sprintf("Hey %s user!\n", clientVersion),
@@ -41,8 +51,11 @@ func onPing() func(*proxy.PingEvent) {
 			*color.White.RGB, *color.LightPurple.RGB,
 		)
 
-		p := e.Ping()
-		p.Description = Join(line1, line2)
-		p.Players.Max = p.Players.Online + 1
+		ping.Description = Join(line1, line2)
+		
+		// Check if Players field is not nil before accessing
+		if ping.Players != nil {
+			ping.Players.Max = ping.Players.Online + 1
+		}
 	}
 }
