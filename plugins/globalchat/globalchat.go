@@ -3,7 +3,7 @@ package globalchat
 import (
 	"context"
 	"github.com/go-logr/logr"
-	. "github.com/minekube/gate-plugin-template/util"
+	. "github.com/raelx/gate-ip-whitelist/util"
 	"github.com/robinbraemer/event"
 	"go.minekube.com/common/minecraft/color"
 	c "go.minekube.com/common/minecraft/component"

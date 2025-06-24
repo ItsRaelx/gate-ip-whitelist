@@ -1,4 +1,4 @@
-module github.com/minekube/gate-plugin-template
+module github.com/raelx/gate-ip-whitelist
 
 go 1.24.1
 

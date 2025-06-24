@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/minekube/gate-plugin-template/plugins/bossbar"
-	"github.com/minekube/gate-plugin-template/plugins/globalchat"
-	"github.com/minekube/gate-plugin-template/plugins/ipwhitelist"
-	"github.com/minekube/gate-plugin-template/plugins/ping"
-	"github.com/minekube/gate-plugin-template/plugins/tablist"
-	"github.com/minekube/gate-plugin-template/plugins/titlecmd"
+	"github.com/raelx/gate-ip-whitelist/plugins/bossbar"
+	"github.com/raelx/gate-ip-whitelist/plugins/globalchat"
+	"github.com/raelx/gate-ip-whitelist/plugins/ipwhitelist"
+	"github.com/raelx/gate-ip-whitelist/plugins/ping"
+	"github.com/raelx/gate-ip-whitelist/plugins/tablist"
+	"github.com/raelx/gate-ip-whitelist/plugins/titlecmd"
 	"go.minekube.com/gate/cmd/gate"
 	"go.minekube.com/gate/pkg/edition/java/proxy"
 )
