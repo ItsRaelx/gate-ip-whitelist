@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/minekube/gate-plugin-template/plugins/bossbar"
 	"github.com/minekube/gate-plugin-template/plugins/globalchat"
+	"github.com/minekube/gate-plugin-template/plugins/ipwhitelist"
 	"github.com/minekube/gate-plugin-template/plugins/ping"
 	"github.com/minekube/gate-plugin-template/plugins/tablist"
 	"github.com/minekube/gate-plugin-template/plugins/titlecmd"
@@ -19,6 +20,7 @@ func main() {
 		// but you can also import your own plugins from other repositories.
 		//
 		// Checkout https://github.com/minekube/awesome for some inspiration.
+		ipwhitelist.Plugin,
 		tablist.Plugin,
 		globalchat.Plugin,
 		bossbar.Plugin,
