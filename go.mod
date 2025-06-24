@@ -7,7 +7,6 @@ toolchain go1.24.4
 require (
 	github.com/go-logr/logr v1.4.3
 	github.com/robinbraemer/event v0.1.1
-	go.minekube.com/brigodier v0.0.1
 	go.minekube.com/common v0.0.6
 	go.minekube.com/gate v0.49.2
 )
@@ -64,6 +63,7 @@ require (
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	github.com/zyedidia/generic v1.2.1 // indirect
+	go.minekube.com/brigodier v0.0.1 // indirect
 	go.minekube.com/connect v0.6.2 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/host v0.53.0 // indirect
